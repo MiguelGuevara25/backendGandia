@@ -818,6 +818,40 @@ export interface ApiNoticiasFemeninoNoticiasFemenino
   };
 }
 
+export interface ApiProximoPartidoProximoPartido extends Schema.SingleType {
+  collectionName: 'proximo_partidos';
+  info: {
+    singularName: 'proximo-partido';
+    pluralName: 'proximo-partidos';
+    displayName: 'ProximoPartido';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    estadio: Attribute.String;
+    fechaPartido: Attribute.DateTime;
+    logoLocal: Attribute.Media;
+    logoVisita: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::proximo-partido.proximo-partido',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::proximo-partido.proximo-partido',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -838,6 +872,7 @@ declare module '@strapi/types' {
       'api::noticia.noticia': ApiNoticiaNoticia;
       'api::noticias-academia.noticias-academia': ApiNoticiasAcademiaNoticiasAcademia;
       'api::noticias-femenino.noticias-femenino': ApiNoticiasFemeninoNoticiasFemenino;
+      'api::proximo-partido.proximo-partido': ApiProximoPartidoProximoPartido;
     }
   }
 }
