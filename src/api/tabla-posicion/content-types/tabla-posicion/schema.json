@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tabla_posiciones",
+  "info": {
+    "singularName": "tabla-posicion",
+    "pluralName": "tabla-posiciones",
+    "displayName": "TablaPosicion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "equipo": {
+      "type": "string"
+    },
+    "puntos": {
+      "type": "integer"
+    },
+    "partidosJugados": {
+      "type": "integer"
+    },
+    "diferenciaGol": {
+      "type": "integer"
+    }
+  }
+}

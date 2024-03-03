@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "previos_partidos",
+  "info": {
+    "singularName": "previo-partido",
+    "pluralName": "previos-partidos",
+    "displayName": "PreviosPartidos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoVisita": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "logoLocal": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "resultadoLocal": {
+      "type": "integer"
+    },
+    "resultadoVisita": {
+      "type": "integer"
+    }
+  }
+}

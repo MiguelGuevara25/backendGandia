@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fotos_secciones",
+  "info": {
+    "singularName": "fotos-seccion",
+    "pluralName": "fotos-secciones",
+    "displayName": "FotosSecciones",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "selectedPage": {
+      "type": "enumeration",
+      "enum": [
+        "/plantilla/primer-equipo",
+        "/plantilla/equipo-tecnico",
+        "/noticias",
+        "/noticias/academia",
+        "/noticias/femenino",
+        "/historia",
+        "/contacto"
+      ]
+    }
+  }
+}

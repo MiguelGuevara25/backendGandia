@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "titulo_tabla_ligas",
+  "info": {
+    "singularName": "titulo-tabla-liga",
+    "pluralName": "titulo-tabla-ligas",
+    "displayName": "TituloTablaLiga"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    }
+  }
+}

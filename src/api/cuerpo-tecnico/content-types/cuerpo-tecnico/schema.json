@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cuerpo_tecnicos",
+  "info": {
+    "singularName": "cuerpo-tecnico",
+    "pluralName": "cuerpo-tecnicos",
+    "displayName": "CuerpoTecnico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "instagram": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "foto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "puesto": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    }
+  }
+}

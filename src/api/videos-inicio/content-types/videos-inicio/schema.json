@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos_inicios",
+  "info": {
+    "singularName": "videos-inicio",
+    "pluralName": "videos-inicios",
+    "displayName": "VideosInicio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enlace": {
+      "type": "string"
+    },
+    "imagen": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "segundo_proximo_partidos",
+  "info": {
+    "singularName": "segundo-proximo-partido",
+    "pluralName": "segundo-proximo-partidos",
+    "displayName": "SegundoProximoPartido",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoLocal": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hora": {
+      "type": "datetime"
+    },
+    "logoVisita": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

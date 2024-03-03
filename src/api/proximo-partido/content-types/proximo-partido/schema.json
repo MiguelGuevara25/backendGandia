@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "proximo_partidos",
+  "info": {
+    "singularName": "proximo-partido",
+    "pluralName": "proximo-partidos",
+    "displayName": "ProximoPartido"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "estadio": {
+      "type": "string"
+    },
+    "fechaPartido": {
+      "type": "datetime"
+    },
+    "logoLocal": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "logoVisita": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

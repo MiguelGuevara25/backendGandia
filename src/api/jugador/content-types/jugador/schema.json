@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jugadores",
+  "info": {
+    "singularName": "jugador",
+    "pluralName": "jugadores",
+    "displayName": "Jugadores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "seccion": {
+      "type": "enumeration",
+      "enum": [
+        "Porteros",
+        "Defensas",
+        "Centrocampistas",
+        "Delanteros"
+      ]
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "plantilla": {
+      "type": "enumeration",
+      "enum": [
+        "Primer Equipo",
+        "Equipo Femenino",
+        "Academia"
+      ]
+    },
+    "posicion": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    }
+  }
+}
